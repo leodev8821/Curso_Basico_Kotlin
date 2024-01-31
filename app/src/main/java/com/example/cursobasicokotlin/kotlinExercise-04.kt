@@ -1,4 +1,5 @@
 package com.example.cursobasicokotlin
+
 /*   Song catalog
 Create a class that can represent the structure of a song. The Song class must include these code elements:
 
@@ -7,31 +8,38 @@ A property that indicates whether the song is popular. If the play count is less
 A method that prints a song description in this format:
 "[Title], performed by [artist], was released in [year published]."
  */
-class Song(
-    var title:String,
-    var artist:String,
-    var publishedYear:Int,
-    var playCount:Int
-){
+class Song {
+    var title: String
+    var artist: String
+    var publishedYear: Int
+    var playCount: Int
 
+    constructor(title: String, artist: String, publishedYear: Int, playCount: Int) {
+        this.title = title
+        this.artist = artist
+        this.publishedYear = publishedYear
+        this.playCount = playCount
+    }
 
-    fun popularityOfSong():Boolean{
+    fun popularityOfSong(): Boolean {
         return playCount >= 1000
     }
 
-    fun printSongDescription():String{
+    fun printSongDescription(): String {
         return "$title, performed by $artist, was released in $publishedYear"
     }
 }
 
-fun main(){
+fun main() {
     val song1 = Song("Thriller", "Michael Jackson", 1980, 3000)
-    val song2 = Song("Roar", "Kathy Perry", 2014, 300
-    )
-    println( "Is the song popular? "+song1.popularityOfSong())
+    val song2 = Song("Roar", "Kathy Perry", 2014, 300)
+
+    println("Is the song popular? " + song1.popularityOfSong())
     println(song1.printSongDescription())
+
     println("---------------------------------")
-    println( "Is the song popular? "+song2.popularityOfSong())
+
+    println("Is the song popular? " + song2.popularityOfSong())
     println(song2.printSongDescription())
 }
 

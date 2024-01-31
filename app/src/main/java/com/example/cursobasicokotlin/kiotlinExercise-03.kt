@@ -30,16 +30,16 @@ fun main() {
 
 }
 
-fun celsiusToFahrenheit(measure:Double):Double{
-    return (9.0/5.0)*measure+32.0
+fun celsiusToFahrenheit(measure: Double): Double {
+    return (9.0 / 5.0) * measure + 32.0
 }
 
-fun kelvinToCelsius(measure: Double):Double{
+fun kelvinToCelsius(measure: Double): Double {
     return (measure - 273.15)
 }
 
-fun fahrenheitToKelvin(measure: Double):Double{
-    return (5.0/9.0*(measure - 32.0)) + 273.15
+fun fahrenheitToKelvin(measure: Double): Double {
+    return (5.0 / 9.0 * (measure - 32.0)) + 273.15
 }
 
 fun printFinalTemperature(
@@ -48,6 +48,7 @@ fun printFinalTemperature(
     finalUnit: String,
     conversionFormula: (Double) -> Double
 ) {
-    val finalMeasurement = String.format("%.2f", conversionFormula(initialMeasurement)) // two decimal places
+    val finalMeasurement =
+        String.format("%.2f", conversionFormula(initialMeasurement)) // two decimal places
     println("$initialMeasurement degrees $initialUnit is $finalMeasurement degrees $finalUnit.")
 }

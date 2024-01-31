@@ -1,4 +1,5 @@
 package com.example.cursobasicokotlin
+
 /*Movie-ticket price
 escribe un programa que calcule los precios de estas entradas basados en la edad:
 
