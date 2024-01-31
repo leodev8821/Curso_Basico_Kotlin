@@ -25,7 +25,7 @@ open class Phone(var isScreenLightOn: Boolean = false) {
     }
 }
 
-class FoldablePhone(var isFolded: Boolean) : Phone() {
+class FoldablePhone(private var isFolded: Boolean) : Phone() {
 
     override fun switchOn() {
         if (!isFolded) isScreenLightOn = true
