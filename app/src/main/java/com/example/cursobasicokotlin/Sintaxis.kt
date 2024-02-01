@@ -11,6 +11,15 @@ fun main() {
     } else {
         println("Los valores ingresados no son válidos")
     }
+
+    println("--------------------*************+--------------")
+    loop@ for (i in 1..100) {
+        for (j in 1..100) {
+            println("valor de i $i, valor de j $j")
+            //break@loop
+        }
+        //break@loop
+    }
 }
 
 fun sum(a: String, b: String) {

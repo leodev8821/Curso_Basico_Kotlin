@@ -33,5 +33,5 @@ fun auctionPrice2(bid: Bid?, minimumPrice: Int): Int {
     }else{
         minimumPrice
     }
-     */
+*/
 }
