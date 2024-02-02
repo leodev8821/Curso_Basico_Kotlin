@@ -1,4 +1,4 @@
-package com.example.cursobasicokotlin
+package com.example.devices
 
 import com.example.devices.Phone as MyPhone
 

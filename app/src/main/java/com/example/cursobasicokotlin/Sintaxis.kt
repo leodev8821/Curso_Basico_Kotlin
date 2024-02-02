@@ -16,6 +16,14 @@ fun main() {
         println("Los valores ingresados no son válidos")
     }
 
+    fun noSpace(x: String): String {
+        var x = x
+        x.replace("\\s".toRegex(), "")
+        return x
+    }
+
+    println( noSpace("8 j 8   mBliB8g  imjB8B8  jl  B"))
+
 }
 
 fun sum(a: String, b: String) :String{
@@ -26,3 +34,4 @@ fun sum(a: String, b: String) :String{
     return "La suma de $a y $b es: $result"
 
 }
+

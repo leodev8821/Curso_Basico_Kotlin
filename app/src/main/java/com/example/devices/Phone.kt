@@ -14,11 +14,11 @@ class Phone (
 
     // Interaction Methods
     fun turnOn():String{
-        return "The phone ${this.model} is turn on"
+        return "The phone $model is turn on"
     }
 
     fun turnOff():String{
-        return "The phone ${this.model} is turn off"
+        return "The phone $model is turn off"
     }
 
     fun makeCall():String{
