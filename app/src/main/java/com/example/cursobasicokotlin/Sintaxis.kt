@@ -3,31 +3,26 @@ package com.example.cursobasicokotlin
 fun main() {
 
     println("Introduce el primer número: ")
-    val val1 = readLine()
+    var val1 = readLine()
     println("Introduce el segundo número: ")
-    val val2 = readLine()
+    var val2 = readLine()
+
     if (val1 != null && val2 != null) {
-        sum(val1, val2)
+        val1 = val1.trim()
+        val2 = val2.trim()
+        println("Valor1: $val1 y Valor2: $val2")
+        println(sum(val1, val2))
     } else {
         println("Los valores ingresados no son válidos")
     }
 
-    println("--------------------*************+--------------")
-    loop@ for (i in 1..100) {
-        for (j in 1..100) {
-            println("valor de i $i, valor de j $j")
-            //break@loop
-        }
-        //break@loop
-    }
 }
 
-fun sum(a: String, b: String) {
-
+fun sum(a: String, b: String) :String{
     val value1 = a.toInt()
     val value2 = b.toInt()
     val result: Int = value1 + value2
 
-    println("La suma de $a y $b es: " + result)
+    return "La suma de $a y $b es: $result"
 
 }
