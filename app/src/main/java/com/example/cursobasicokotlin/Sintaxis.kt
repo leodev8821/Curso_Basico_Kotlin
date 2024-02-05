@@ -3,9 +3,9 @@ package com.example.cursobasicokotlin
 fun main() {
 
     println("Introduce el primer número: ")
-    var val1 = readLine()
+    var val1 = readlnOrNull()
     println("Introduce el segundo número: ")
-    var val2 = readLine()
+    var val2 = readlnOrNull()
 
     if (val1 != null && val2 != null) {
         val1 = val1.trim()
@@ -17,7 +17,7 @@ fun main() {
     }
 
     fun noSpace(x: String): String {
-        var x = x
+        val x = x
         x.replace("\\s".toRegex(), "")
         return x
     }

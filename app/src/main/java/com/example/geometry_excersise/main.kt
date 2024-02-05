@@ -9,12 +9,12 @@ fun main(){
     circulo.calcularArea()
     circulo.calcularPerimetro()
 
-    println("-+-+-+-+-+-+-+-+-+-+-+-+-+")
+    println("\n-+-+-+-+-+-+-+-+-+-+-+-+-+")
 
     rectangulo.calcularArea()
     rectangulo.calcularPerimetro()
 
-    println("-+-+-+-+-+-+-+-+-+-+-+-+-+")
+    println("\n-+-+-+-+-+-+-+-+-+-+-+-+-+")
 
     triangulo.calcularArea()
     triangulo.calcularPerimetro()
