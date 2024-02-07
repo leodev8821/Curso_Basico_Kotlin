@@ -15,6 +15,7 @@ fun main(){
     rectangulo.calcularPerimetro()
 
     println("\n-+-+-+-+-+-+-+-+-+-+-+-+-+")
+    println("\n-+-+-+-+-+-+-+-+-+-+-+-+-+")
 
     triangulo.calcularArea()
     triangulo.calcularPerimetro()
